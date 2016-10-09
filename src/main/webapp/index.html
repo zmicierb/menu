@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Menu</title>
+
+    <script type="text/javascript">
+        var BASE_PATH = '${CONTEXT}';
+    </script>
+    <script src="lib/jquery/dist/jquery.js" charset="UTF-8"></script>
+    <script src="js/menu.js" charset="UTF-8"></script>
+    <script charset="UTF-8">
+        jQuery(document).ready(function () {
+            menu.setMenu(jQuery('.main-nav'));
+        })
+    </script>
+
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+
+</head>
+<body>
+
+<div class="head"></div>
+<div class="main">
+    <div class="main-nav"></div>
+    <div ng-view class="main-content"></div>
+</div>
+<div class="foot"></div>
+
+<script src="lib/requirejs/require.js" data-main="js/main.js"></script>
+</body>
+</html>

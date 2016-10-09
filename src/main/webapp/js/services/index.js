@@ -1,0 +1,4 @@
+define([
+    './userSrv'
+], function () {
+});

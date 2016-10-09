@@ -1,0 +1,81 @@
+.dropdown-menu .dropdown-menu {
+    margin: 0;
+    left: 100%;
+    top: -5px;
+}
+
+.dropdown-toogle li:hover .dropdown-menu {
+    display: block;
+}
+
+/** from jQuery project **/
+.head, .main, .main-content,
+.main-nav, .foot {
+    position: absolute;
+    overflow: auto;
+}
+
+.head {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+}
+
+.main {
+    top: 40px;
+    left: 0;
+    bottom: 40px;
+    right: 0;
+}
+
+.main-content,
+.main-nav {
+    top: 0;
+    bottom: 0;
+}
+
+.main-nav {
+    width: 200px;
+    background: #eee;
+    z-index: 1;
+}
+
+.main-content {
+    left: 200px;
+    right: 0;
+    background: #ddd;
+}
+
+.foot {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+}
+
+.li-level, .li-item {
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow-x: hidden;
+}
+
+.li-level {
+}
+
+.li-item {
+    margin-left: 20px;
+}
+
+.x-closed {
+    width: 0;
+    left: 0;
+    display: none;
+}
+
+.x-opened {
+    display: block;
+}
